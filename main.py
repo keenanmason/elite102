@@ -1,35 +1,22 @@
 import sqlite3
 
 
-def initialize_database():
+
+def main():
     connection = sqlite3.connect('example.db')
     cursor = connection.cursor()
 
     # Create a sample table
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
-            id INTEGER PRIMARY KEY,
-            name TEXT NOT NULL,
-            age INTEGER NOT NULL
-        )
+    results=cursor.execute('''
+        SELECT id, name, age FROM users
     ''')
 
-    # Insert sample data
-    cursor.execute('''
-        INSERT INTO users (name, age) VALUES
-        ('Alice', 30),
-        ('Bob', 25)
-    ''')
+    print("Results:")
+    for row in results:
+        print(row)
 
     connection.commit()
     connection.close()
-
-
-def main():
-    initialize_database()
-
-    #
-    print("Database initialized and sample data inserted.")
 
 
 if __name__ == "__main__":
