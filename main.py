@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def initialize_database():
     connection = sqlite3.connect('example.db')
     cursor = connection.cursor()
@@ -23,9 +24,13 @@ def initialize_database():
     connection.commit()
     connection.close()
 
+
 def main():
     initialize_database()
+
+    #
     print("Database initialized and sample data inserted.")
+
 
 if __name__ == "__main__":
     main()
