@@ -1,14 +1,13 @@
 import sqlite3
 
 
-
 def main():
     connection = sqlite3.connect('example.db')
     cursor = connection.cursor()
 
     # Create a sample table
-    results=cursor.execute('''
-        SELECT id, name, age FROM users
+    results = cursor.execute('''
+        SELECT id, name, age, grade, gpa FROM students
     ''')
 
     print("Results:")

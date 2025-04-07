@@ -16,7 +16,13 @@ This project is a simple Python application that interacts with an SQLite databa
    pip install -r requirements.txt
    ```
 
-3. **Run the application:**
+3. **Initialize the database:**
+   You can start the application by running:
+   ```
+   python initialize_db.py
+   ```
+
+4. **Run the application:**
    You can start the application by running:
    ```
    python main.py
