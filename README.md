@@ -2,25 +2,6 @@
 
 This project is a simple Python application that interacts with an SQLite database. It serves as a demonstration of how to set up a Python project with SQLite and includes basic functionality for database operations.
 
-## Project Structure
-
-```
-python-sqlite-project
-├── src
-│   ├── main.py          # Entry point of the application
-│   ├── database
-│   │   └── db_setup.py  # Database setup and initialization
-│   └── models
-│       └── __init__.py  # Data models for the application
-├── requirements.txt      # Project dependencies
-├── .devcontainer
-│   ├── devcontainer.json # Development container configuration
-│   └── Dockerfile        # Docker image setup
-├── .vscode
-│   └── settings.json     # VS Code settings
-└── README.md             # Project documentation
-```
-
 ## Setup Instructions
 
 1. **Clone the repository:**
