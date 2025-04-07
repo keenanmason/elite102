@@ -19,7 +19,7 @@ This project is a simple Python application that interacts with an SQLite databa
 3. **Run the application:**
    You can start the application by running:
    ```
-   python src/main.py
+   python main.py
    ```
 
 ## Usage
