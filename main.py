@@ -24,7 +24,6 @@ def main():
     for row in results:
         print(row)
 
-    connection.commit()
     connection.close()
 
 
