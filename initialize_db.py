@@ -11,12 +11,13 @@ def initialize_database():
     # Create a sample table
     print("Creating table if it does not exist...")
     cursor.execute('''
-        CREATE TABLE students
+        CREATE TABLE user
             (id integer primary key, 
-            name text, 
-            age integer, 
-            grade text, 
-            gpa real)
+            first_name text,
+            last_name text,
+            email text,
+            phone_number text)
+
     ''')
 
     print("Table created.")
@@ -24,10 +25,10 @@ def initialize_database():
     # Insert sample data
     print("Inserting sample data...")
     cursor.execute('''
-        INSERT INTO students (name, age,grade, gpa) VALUES
-        ('Alice', 16, '10th', 3.5),
-        ('Bob', 17, '11th', 3.8),
-        ('Charlie', 15, '9th', 3.2)
+        INSERT INTO user (first_name,last_name, email, phone_number) VALUES
+        ('Alice', 'john, 'alice@test.com', '555-555-555'),
+        ('Bob', james, 'bob@test.com', '333-333-3333'),
+        ('Charlie', brown, 'charlie@test.com', 222-222-2222)
     ''')
     print("Sample data inserted.")
     # Commit the changes and close the connection

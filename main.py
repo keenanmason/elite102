@@ -8,7 +8,7 @@ def main():
     # Get all rows from the students table
     print("Fetching all rows from the students table...")
     results = cursor.execute('''
-        SELECT * FROM students
+        SELECT * FROM user WHERE last_name like 'brown'
     ''')
 
     print("Results:")
